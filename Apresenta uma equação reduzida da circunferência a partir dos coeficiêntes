@@ -1,0 +1,17 @@
+# Solicita os coeficientes
+a = float(input("Digite o coeficiente de x²: "))
+b = float(input("Digite o coeficiente de x: "))
+c = float(input("Digite o coeficiente de y²: "))
+d = float(input("Digite o coeficiente de y: "))
+e = float(input("Digite o termo constante: "))
+
+# Calcula as coordenadas do centro e o raio
+h = -b / (2 * a)
+k = -d / (2 * c)
+r = ((b**2 + d**2 - 4 * a * c * e) / (4 * a * c))**0.5
+
+# Gera a equação reduzida
+equacao = f"(x - {h:.2f})² + (y - {k:.2f})² = {r:.2f}²"
+
+# Imprime a equação reduzida
+print("A equação reduzida da circunferência é:", equacao)
